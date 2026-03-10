@@ -6,7 +6,7 @@ def show():
     st.markdown(
     """
     <div class="hero">
-        <h1>Hassan Zakria</h1>
+        <h1>Muhammad Hassan</h1>
         <h3>AI Engineer | RAG Systems | LLM Applications</h3>
         <p>I build AI assistants, RAG systems, and ML prediction APIs.</p>
     </div>
