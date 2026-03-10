@@ -1,5 +1,11 @@
 import streamlit as st
 
+
+st.set_page_config(
+    page_title="AI Portfolio",
+    layout="wide",
+    initial_sidebar_state="collapsed"  # <---- hide sidebar
+)
 def show():
 
     st.title("About")
