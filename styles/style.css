@@ -1,38 +1,78 @@
-.hero{
-    padding:60px;
-    text-align:center;
-    background:linear-gradient(90deg,#0f172a,#1e293b);
-    border-radius:12px;
-    margin-bottom:30px;
-    }
-    
-    .service-card{
-    padding:25px;
-    border-radius:14px;
-    background:#1e293b;
-    transition:0.3s;
-    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
-    }
-    
-    .service-card:hover{
-    transform:translateY(-5px);
-    background:#334155;
-    }
-    
-    .project-card{
-    padding:25px;
-    border-radius:14px;
-    background:#1e293b;
-    margin-bottom:20px;
-    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
-    }
-    
-    .project-card:hover{
-    transform:scale(1.02);
-    }
-    
-    .chat-box{
-    border-radius:10px;
-    padding:20px;
-    background:#1e293b;
-    }
+/* ===== Hero Section ===== */
+.hero {
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #0a0f2c, #1e1f3c); /* dark navy gradient */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+/* ===== Button Style ===== */
+.button {
+    background: linear-gradient(90deg, #6a5cff, #ff4ec1);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #6a5cff, 0 0 25px #ff4ec1;
+}
+
+/* ===== Service & Project Cards ===== */
+.service-card, .project-card {
+    padding: 25px;
+    border-radius: 14px;
+    background: #1b1b36; /* slightly lighter dark background */
+    margin: 15px;
+    border: 2px solid #6a5cff; /* neon purple outline */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover, .project-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    border: 2px solid #ff4ec1; /* neon pink glow on hover */
+    box-shadow: 0 0 20px #6a5cff, 0 0 30px #ff4ec1, 0 4px 10px rgba(0,0,0,0.3);
+    animation: glowPulse 1.5s infinite alternate;
+}
+
+/* ===== Chat Box ===== */
+.chat-box {
+    border-radius: 12px;
+    padding: 20px;
+    background: #1b1b36;
+    margin: 15px;
+    border: 2px solid #6a5cff; /* neon purple outline */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.chat-box:hover {
+    transform: translateY(-3px);
+    border: 2px solid #ff4ec1;
+    box-shadow: 0 0 20px #6a5cff, 0 0 30px #ff4ec1, 0 4px 10px rgba(0,0,0,0.4);
+    animation: glowPulse 1.5s infinite alternate;
+}
+
+/* ===== Glow Pulse Animation ===== */
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 15px #6a5cff, 0 0 25px #ff4ec1, 0 4px 10px rgba(0,0,0,0.3); }
+    100% { box-shadow: 0 0 25px #6a5cff, 0 0 35px #ff4ec1, 0 4px 10px rgba(0,0,0,0.3); }
+}
+
+/* ===== Global Font & Text ===== */
+body, h1, h2, h3, p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+}
