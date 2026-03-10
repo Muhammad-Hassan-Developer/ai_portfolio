@@ -1,0 +1,33 @@
+ai_portfolio/
+│
+├── app.py
+├── config.py
+├── requirements.txt
+├── README.md
+├── .env
+├── .gitignore
+│
+├── .streamlit/
+│   └── config.toml
+│
+├── pages/
+│   ├── home.py
+│   ├── services.py
+│   ├── projects.py
+│   ├── demos.py
+│   ├── about.py
+│   └── contact.py
+│
+├── components/
+│   ├── service_cards.py
+│   ├── project_cards.py
+│   └── rag_chat.py
+│
+├── api_clients/
+│   └── rag_api.py
+│
+├── styles/
+│   └── style.css
+│
+└── assets/
+    └── images/
